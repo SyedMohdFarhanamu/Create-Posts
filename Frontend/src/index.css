@@ -130,6 +130,31 @@ body {
   padding: clamp(28px, 6vw, 56px) 0;
 }
 
+.feed-title {
+  width: fit-content;
+  margin: clamp(28px, 5vw, 48px) auto 0;
+  position: relative;
+  color: #5268df;
+  background: linear-gradient(110deg, #465fd7 15%, #7956dc 85%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: clamp(2rem, 7vw, 3rem);
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.feed-title::after {
+  display: block;
+  width: 42%;
+  height: 4px;
+  margin: 10px auto 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #5268df, #9a70e8);
+  content: "";
+}
+
 .feed-section .post {
   overflow: hidden;
   margin-bottom: 28px;

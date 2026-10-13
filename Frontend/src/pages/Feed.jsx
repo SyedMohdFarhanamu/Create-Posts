@@ -21,19 +21,22 @@ const Feed = () => {
 
 
   return (
-    <section className='feed-section'>
-       {
-        posts.length > 0 ? (
-            posts.map((post) => (
-                <div key={post._id} className='post'>
-                    <img src={post.image} alt="Post" />
-                    <p>{post.caption}</p>
-                </div>
-            ))
-        ) : (
-            <p>No posts available.</p>
-        )}
-    </section>
+        <>
+            <h1 className="feed-title">YARANA</h1>
+            <section className='feed-section'>
+                {
+                    posts.length > 0 ? (
+                        posts.map((post) => (
+                            <div key={post._id} className='post'>
+                                <img src={post.image} alt="Post" />
+                                <p>{post.caption}</p>
+                            </div>
+                        ))
+                    ) : (
+                        <p>No posts available.</p>
+                    )}
+            </section>
+        </>
   )
 }
 
