@@ -1,6 +1,6 @@
 import  { useState, useEffect } from 'react'
 import axios from 'axios'
-
+import API_URL from '../config'
 const Feed = () => {
 
     const [posts, setPosts] = useState([
@@ -10,7 +10,7 @@ const Feed = () => {
     ])
 
     useEffect(() => {
-        axios.get('http://localhost:3000/posts')
+        axios.get(`${API_URL}/posts`)
         .then((res)=> {
             console.log(res.data)
 

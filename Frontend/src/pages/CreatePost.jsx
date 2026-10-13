@@ -1,6 +1,7 @@
 // import React from 'react'
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
+import API_URL from '../config'
 
 const CreatePost = () => {
 
@@ -11,7 +12,7 @@ const CreatePost = () => {
 
         const formData = new FormData(e.target);
 
-        axios.post('http://localhost:3000/create-post', formData)
+        axios.post(`${API_URL}/create-post`, formData)
         .then((res) => {
             // alert('Post created successfully');
             // e.target.reset(); // reset the form after successful submission
