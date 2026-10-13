@@ -1,6 +1,6 @@
 import  { useState, useEffect } from 'react'
 import axios from 'axios'
-import API_URL from '../config'
+
 const Feed = () => {
 
     const [posts, setPosts] = useState([
@@ -10,7 +10,7 @@ const Feed = () => {
     ])
 
     useEffect(() => {
-        axios.get(`${API_URL}/posts`)
+        axios.get('https://create-posts-3.onrender.com/posts')
         .then((res)=> {
             console.log(res.data)
 
