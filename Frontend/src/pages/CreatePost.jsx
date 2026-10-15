@@ -11,7 +11,7 @@ const CreatePost = () => {
 
         const formData = new FormData(e.target);
 
-        axios.post('https://create-posts-3.onrender.com/create-post', formData)
+        axios.post('https://create-posts-1.onrender.com/create-post', formData)
         .then((res) => {
             // alert('Post created successfully');
             // e.target.reset(); // reset the form after successful submission

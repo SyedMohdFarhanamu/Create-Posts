@@ -10,7 +10,7 @@ const Feed = () => {
     ])
 
     useEffect(() => {
-        axios.get('https://create-posts-3.onrender.com/posts')
+        axios.get('https://create-posts-1.onrender.com/posts')
         .then((res)=> {
             console.log(res.data)
 
